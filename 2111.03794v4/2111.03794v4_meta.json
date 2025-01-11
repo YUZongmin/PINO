@@ -1,0 +1,1921 @@
+{
+  "table_of_contents": [
+    {
+      "title": "Physics-Informed Neural Operator\nfor Learning Partial Differential Equations",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          157.5,
+          109.5
+        ],
+        [
+          452.42578125,
+          109.5
+        ],
+        [
+          452.42578125,
+          148.2099609375
+        ],
+        [
+          157.5,
+          148.2099609375
+        ]
+      ]
+    },
+    {
+      "title": "Abstract",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          288.66796875,
+          217.5
+        ],
+        [
+          323.33203125,
+          217.5
+        ],
+        [
+          323.33203125,
+          226.810546875
+        ],
+        [
+          288.66796875,
+          226.810546875
+        ]
+      ]
+    },
+    {
+      "title": "Introduction\n1",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          70.5,
+          383.25
+        ],
+        [
+          171.75,
+          383.25
+        ],
+        [
+          171.75,
+          397.546875
+        ],
+        [
+          70.5,
+          397.546875
+        ]
+      ]
+    },
+    {
+      "title": "1.1\nOur Approach and Contributions",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          70.5,
+          385.5
+        ],
+        [
+          270.2900390625,
+          385.5
+        ],
+        [
+          270.2900390625,
+          396.38671875
+        ],
+        [
+          70.5,
+          396.38671875
+        ]
+      ]
+    },
+    {
+      "title": "1.2\nRelated Work",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          70.5,
+          406.44140625
+        ],
+        [
+          170.25,
+          406.44140625
+        ],
+        [
+          170.25,
+          418.04296875
+        ],
+        [
+          70.5,
+          418.04296875
+        ]
+      ]
+    },
+    {
+      "title": "2\nPreliminaries and problem settings",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          69.75,
+          495.0
+        ],
+        [
+          307.5,
+          495.0
+        ],
+        [
+          307.5,
+          509.6953125
+        ],
+        [
+          69.75,
+          509.6953125
+        ]
+      ]
+    },
+    {
+      "title": "2.1\nProblem settings",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          70.5,
+          572.25
+        ],
+        [
+          183.779296875,
+          572.25
+        ],
+        [
+          183.779296875,
+          583.9453125
+        ],
+        [
+          70.5,
+          583.9453125
+        ]
+      ]
+    },
+    {
+      "title": "2.2\nSolving equation using the physics-informed neural networks",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          70.5,
+          231.75
+        ],
+        [
+          410.25,
+          231.75
+        ],
+        [
+          410.25,
+          242.859375
+        ],
+        [
+          70.5,
+          242.859375
+        ]
+      ]
+    },
+    {
+      "title": "2.3\n Learning the solution operator via neural operator",
+      "heading_level": null,
+      "page_id": 5,
+      "polygon": [
+        [
+          70.5,
+          72.75
+        ],
+        [
+          357.99609375,
+          72.75
+        ],
+        [
+          357.99609375,
+          83.38623046875
+        ],
+        [
+          70.5,
+          83.38623046875
+        ]
+      ]
+    },
+    {
+      "title": "2.4\nNeural operators",
+      "heading_level": null,
+      "page_id": 5,
+      "polygon": [
+        [
+          70.5,
+          348.0
+        ],
+        [
+          186.9169921875,
+          348.0
+        ],
+        [
+          186.9169921875,
+          359.068359375
+        ],
+        [
+          70.5,
+          359.068359375
+        ]
+      ]
+    },
+    {
+      "title": "Definition 1 (Neural operator Go)  Define the neural operator",
+      "heading_level": null,
+      "page_id": 5,
+      "polygon": [
+        [
+          70.5,
+          423.0
+        ],
+        [
+          323.033203125,
+          423.0
+        ],
+        [
+          323.033203125,
+          432.73828125
+        ],
+        [
+          70.5,
+          432.73828125
+        ]
+      ]
+    },
+    {
+      "title": "Physics-informed neural operator (PINO)\n3",
+      "heading_level": null,
+      "page_id": 6,
+      "polygon": [
+        [
+          70.5,
+          551.07421875
+        ],
+        [
+          351.123046875,
+          551.07421875
+        ],
+        [
+          351.123046875,
+          567.31640625
+        ],
+        [
+          70.5,
+          567.31640625
+        ]
+      ]
+    },
+    {
+      "title": "3.1\nPhysics-informed operator learning",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          70.5,
+          72.0
+        ],
+        [
+          281.0478515625,
+          72.0
+        ],
+        [
+          281.0478515625,
+          83.28955078125
+        ],
+        [
+          70.5,
+          83.28955078125
+        ]
+      ]
+    },
+    {
+      "title": "3.2\nInstance-wise fine-tuning of trained operator ansatz",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          70.5,
+          228.0
+        ],
+        [
+          363.0,
+          228.0
+        ],
+        [
+          363.0,
+          238.60546875
+        ],
+        [
+          70.5,
+          238.60546875
+        ]
+      ]
+    },
+    {
+      "title": "3.3\nDerivatives of neural operators",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          70.5,
+          575.25
+        ],
+        [
+          258.0,
+          575.25
+        ],
+        [
+          258.0,
+          586.265625
+        ],
+        [
+          70.5,
+          586.265625
+        ]
+      ]
+    },
+    {
+      "title": "3.4\nInverse problem",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          70.5,
+          283.5
+        ],
+        [
+          181.6875,
+          283.5
+        ],
+        [
+          181.6875,
+          294.486328125
+        ],
+        [
+          70.5,
+          294.486328125
+        ]
+      ]
+    },
+    {
+      "title": "4\nExperiments",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          70.5,
+          507.75
+        ],
+        [
+          171.75,
+          507.75
+        ],
+        [
+          171.75,
+          520.91015625
+        ],
+        [
+          70.5,
+          520.91015625
+        ]
+      ]
+    },
+    {
+      "title": "4.1\nOperator learning with physics constraints",
+      "heading_level": null,
+      "page_id": 11,
+      "polygon": [
+        [
+          70.5,
+          318.462890625
+        ],
+        [
+          316.7578125,
+          318.462890625
+        ],
+        [
+          316.7578125,
+          330.064453125
+        ],
+        [
+          70.5,
+          330.064453125
+        ]
+      ]
+    },
+    {
+      "title": "4.2\nSolve equation using operator ansatz",
+      "heading_level": null,
+      "page_id": 12,
+      "polygon": [
+        [
+          70.5,
+          538.5
+        ],
+        [
+          287.25,
+          538.5
+        ],
+        [
+          287.25,
+          549.9140625
+        ],
+        [
+          70.5,
+          549.9140625
+        ]
+      ]
+    },
+    {
+      "title": "4.3\nInverse problem",
+      "heading_level": null,
+      "page_id": 15,
+      "polygon": [
+        [
+          70.5,
+          412.5
+        ],
+        [
+          181.5380859375,
+          412.5
+        ],
+        [
+          181.5380859375,
+          423.84375
+        ],
+        [
+          70.5,
+          423.84375
+        ]
+      ]
+    },
+    {
+      "title": "5\nConclusion and future work",
+      "heading_level": null,
+      "page_id": 16,
+      "polygon": [
+        [
+          69.75,
+          199.5
+        ],
+        [
+          265.5,
+          199.5
+        ],
+        [
+          265.5,
+          213.662109375
+        ],
+        [
+          69.75,
+          213.662109375
+        ]
+      ]
+    },
+    {
+      "title": "Acknowledgement",
+      "heading_level": null,
+      "page_id": 16,
+      "polygon": [
+        [
+          69.75,
+          423.0
+        ],
+        [
+          184.5,
+          423.0
+        ],
+        [
+          184.5,
+          436.9921875
+        ],
+        [
+          69.75,
+          436.9921875
+        ]
+      ]
+    },
+    {
+      "title": "References",
+      "heading_level": null,
+      "page_id": 16,
+      "polygon": [
+        [
+          69.75,
+          549.75
+        ],
+        [
+          138.88037109375,
+          549.75
+        ],
+        [
+          138.88037109375,
+          564.99609375
+        ],
+        [
+          69.75,
+          564.99609375
+        ]
+      ]
+    },
+    {
+      "title": "Implementation details\nA",
+      "heading_level": null,
+      "page_id": 21,
+      "polygon": [
+        [
+          70.5,
+          69.85107421875
+        ],
+        [
+          239.66015625,
+          69.85107421875
+        ],
+        [
+          239.66015625,
+          84.15966796875
+        ],
+        [
+          70.5,
+          84.15966796875
+        ]
+      ]
+    },
+    {
+      "title": "A.1\nBurgers Equation",
+      "heading_level": null,
+      "page_id": 21,
+      "polygon": [
+        [
+          70.5,
+          146.0830078125
+        ],
+        [
+          193.341796875,
+          146.0830078125
+        ],
+        [
+          193.341796875,
+          158.8447265625
+        ],
+        [
+          70.5,
+          158.8447265625
+        ]
+      ]
+    },
+    {
+      "title": "A.2\n Darcy Flow",
+      "heading_level": null,
+      "page_id": 21,
+      "polygon": [
+        [
+          70.5,
+          241.3125
+        ],
+        [
+          162.263671875,
+          241.3125
+        ],
+        [
+          162.263671875,
+          254.07421875
+        ],
+        [
+          70.5,
+          254.07421875
+        ]
+      ]
+    },
+    {
+      "title": "A.3\nLong temporal transient flow.",
+      "heading_level": null,
+      "page_id": 21,
+      "polygon": [
+        [
+          70.5,
+          384.01171875
+        ],
+        [
+          254.302734375,
+          384.01171875
+        ],
+        [
+          254.302734375,
+          396.38671875
+        ],
+        [
+          70.5,
+          396.38671875
+        ]
+      ]
+    },
+    {
+      "title": "Chaotic Kolmogorov flow.\nA.4",
+      "heading_level": null,
+      "page_id": 21,
+      "polygon": [
+        [
+          70.5,
+          491.51953125
+        ],
+        [
+          235.3271484375,
+          491.51953125
+        ],
+        [
+          235.3271484375,
+          503.89453125
+        ],
+        [
+          70.5,
+          503.89453125
+        ]
+      ]
+    },
+    {
+      "title": "A.5\nTransfer learning across Reynolds numbers",
+      "heading_level": null,
+      "page_id": 22,
+      "polygon": [
+        [
+          70.5,
+          590.25
+        ],
+        [
+          325.72265625,
+          590.25
+        ],
+        [
+          325.72265625,
+          602.12109375
+        ],
+        [
+          70.5,
+          602.12109375
+        ]
+      ]
+    },
+    {
+      "title": "Additional experiments\nB",
+      "heading_level": null,
+      "page_id": 24,
+      "polygon": [
+        [
+          70.5,
+          291.75
+        ],
+        [
+          239.8095703125,
+          291.75
+        ],
+        [
+          239.8095703125,
+          306.66796875
+        ],
+        [
+          70.5,
+          306.66796875
+        ]
+      ]
+    },
+    {
+      "title": "Additional baselines\nB.1",
+      "heading_level": null,
+      "page_id": 24,
+      "polygon": [
+        [
+          70.5,
+          318.0
+        ],
+        [
+          204.3984375,
+          318.0
+        ],
+        [
+          204.3984375,
+          330.0
+        ],
+        [
+          70.5,
+          330.0
+        ]
+      ]
+    },
+    {
+      "title": "B.2\nLid Cavity flow.",
+      "heading_level": null,
+      "page_id": 24,
+      "polygon": [
+        [
+          70.5,
+          509.25
+        ],
+        [
+          181.5,
+          509.25
+        ],
+        [
+          181.5,
+          520.13671875
+        ],
+        [
+          70.5,
+          520.13671875
+        ]
+      ]
+    },
+    {
+      "title": "Fourier continuation\nC",
+      "heading_level": null,
+      "page_id": 25,
+      "polygon": [
+        [
+          69.75,
+          243.0
+        ],
+        [
+          225.1669921875,
+          243.0
+        ],
+        [
+          225.1669921875,
+          258.134765625
+        ],
+        [
+          69.75,
+          258.134765625
+        ]
+      ]
+    },
+    {
+      "title": "PDE constraints in inverse problems\nD",
+      "heading_level": null,
+      "page_id": 25,
+      "polygon": [
+        [
+          70.5,
+          486.75
+        ],
+        [
+          320.25,
+          486.75
+        ],
+        [
+          320.25,
+          501.57421875
+        ],
+        [
+          70.5,
+          501.57421875
+        ]
+      ]
+    },
+    {
+      "title": "E\nDiscretization convergence and representation equivalence",
+      "heading_level": null,
+      "page_id": 25,
+      "polygon": [
+        [
+          69.75,
+          615.0
+        ],
+        [
+          453.75,
+          615.0
+        ],
+        [
+          453.75,
+          629.19140625
+        ],
+        [
+          69.75,
+          629.19140625
+        ]
+      ]
+    }
+  ],
+  "page_stats": [
+    {
+      "page_id": 0,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "Line",
+          43
+        ],
+        [
+          "Span",
+          43
+        ],
+        [
+          "Text",
+          5
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0
+      }
+    },
+    {
+      "page_id": 1,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "Line",
+          57
+        ],
+        [
+          "Span",
+          57
+        ],
+        [
+          "Text",
+          4
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0
+      }
+    },
+    {
+      "page_id": 2,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "Line",
+          57
+        ],
+        [
+          "Span",
+          57
+        ],
+        [
+          "Text",
+          4
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0
+      }
+    },
+    {
+      "page_id": 3,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "Span",
+          65
+        ],
+        [
+          "Line",
+          46
+        ],
+        [
+          "Text",
+          4
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "Equation",
+          1
+        ],
+        [
+          "TextInlineMath",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 1,
+        "llm_error_count": 0,
+        "llm_tokens_used": 1252
+      }
+    },
+    {
+      "page_id": 4,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "Span",
+          112
+        ],
+        [
+          "Line",
+          46
+        ],
+        [
+          "TextInlineMath",
+          5
+        ],
+        [
+          "Equation",
+          3
+        ],
+        [
+          "Text",
+          2
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 5,
+        "llm_error_count": 0,
+        "llm_tokens_used": 5134
+      }
+    },
+    {
+      "page_id": 5,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "Span",
+          115
+        ],
+        [
+          "Line",
+          49
+        ],
+        [
+          "Equation",
+          6
+        ],
+        [
+          "Text",
+          6
+        ],
+        [
+          "TextInlineMath",
+          4
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 5,
+        "llm_error_count": 2,
+        "llm_tokens_used": 4644
+      }
+    },
+    {
+      "page_id": 6,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "Span",
+          50
+        ],
+        [
+          "Line",
+          43
+        ],
+        [
+          "Text",
+          6
+        ],
+        [
+          "ListItem",
+          2
+        ],
+        [
+          "Equation",
+          1
+        ],
+        [
+          "TextInlineMath",
+          1
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 1,
+        "llm_error_count": 0,
+        "llm_tokens_used": 941
+      }
+    },
+    {
+      "page_id": 7,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "Span",
+          84
+        ],
+        [
+          "Line",
+          48
+        ],
+        [
+          "Text",
+          5
+        ],
+        [
+          "TextInlineMath",
+          4
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "Equation",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 4,
+        "llm_error_count": 0,
+        "llm_tokens_used": 3718
+      }
+    },
+    {
+      "page_id": 8,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "Span",
+          60
+        ],
+        [
+          "Line",
+          39
+        ],
+        [
+          "Text",
+          6
+        ],
+        [
+          "Equation",
+          6
+        ],
+        [
+          "TextInlineMath",
+          5
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 5,
+        "llm_error_count": 2,
+        "llm_tokens_used": 5287
+      }
+    },
+    {
+      "page_id": 9,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "Span",
+          95
+        ],
+        [
+          "Line",
+          49
+        ],
+        [
+          "Text",
+          4
+        ],
+        [
+          "TextInlineMath",
+          3
+        ],
+        [
+          "Equation",
+          3
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "ListItem",
+          2
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 3,
+        "llm_error_count": 0,
+        "llm_tokens_used": 3680
+      }
+    },
+    {
+      "page_id": 10,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "Span",
+          90
+        ],
+        [
+          "Line",
+          62
+        ],
+        [
+          "TextInlineMath",
+          3
+        ],
+        [
+          "ListItem",
+          3
+        ],
+        [
+          "Equation",
+          2
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "Text",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 3,
+        "llm_error_count": 1,
+        "llm_tokens_used": 3541
+      }
+    },
+    {
+      "page_id": 11,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "Span",
+          90
+        ],
+        [
+          "Line",
+          63
+        ],
+        [
+          "TextInlineMath",
+          3
+        ],
+        [
+          "Caption",
+          2
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "Text",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ],
+        [
+          "TableGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 4,
+        "llm_error_count": 0,
+        "llm_tokens_used": 5118
+      }
+    },
+    {
+      "page_id": 12,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "Span",
+          72
+        ],
+        [
+          "Line",
+          58
+        ],
+        [
+          "Text",
+          6
+        ],
+        [
+          "Table",
+          2
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "TextInlineMath",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "TableGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 4,
+        "llm_error_count": 0,
+        "llm_tokens_used": 3265
+      }
+    },
+    {
+      "page_id": 13,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "Line",
+          66
+        ],
+        [
+          "Span",
+          66
+        ],
+        [
+          "Text",
+          5
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "TableGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 1,
+        "llm_error_count": 0,
+        "llm_tokens_used": 824
+      }
+    },
+    {
+      "page_id": 14,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "Line",
+          43
+        ],
+        [
+          "Span",
+          43
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "Text",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0
+      }
+    },
+    {
+      "page_id": 15,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "Span",
+          147
+        ],
+        [
+          "Line",
+          95
+        ],
+        [
+          "TextInlineMath",
+          3
+        ],
+        [
+          "Caption",
+          2
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "Text",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "TableGroup",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 4,
+        "llm_error_count": 0,
+        "llm_tokens_used": 4797
+      }
+    },
+    {
+      "page_id": 16,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "Line",
+          46
+        ],
+        [
+          "Span",
+          46
+        ],
+        [
+          "Text",
+          8
+        ],
+        [
+          "ListItem",
+          4
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0
+      }
+    },
+    {
+      "page_id": 17,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "Line",
+          44
+        ],
+        [
+          "Span",
+          44
+        ],
+        [
+          "ListItem",
+          18
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0
+      }
+    },
+    {
+      "page_id": 18,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "Line",
+          44
+        ],
+        [
+          "Span",
+          44
+        ],
+        [
+          "ListItem",
+          17
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0
+      }
+    },
+    {
+      "page_id": 19,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "Line",
+          44
+        ],
+        [
+          "Span",
+          44
+        ],
+        [
+          "ListItem",
+          17
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0
+      }
+    },
+    {
+      "page_id": 20,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "Line",
+          6
+        ],
+        [
+          "Span",
+          6
+        ],
+        [
+          "ListItem",
+          2
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0
+      }
+    },
+    {
+      "page_id": 21,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "Span",
+          116
+        ],
+        [
+          "Line",
+          51
+        ],
+        [
+          "SectionHeader",
+          5
+        ],
+        [
+          "TextInlineMath",
+          4
+        ],
+        [
+          "Text",
+          2
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 3,
+        "llm_error_count": 1,
+        "llm_tokens_used": 4696
+      }
+    },
+    {
+      "page_id": 22,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "Line",
+          111
+        ],
+        [
+          "Span",
+          111
+        ],
+        [
+          "Text",
+          3
+        ],
+        [
+          "Table",
+          2
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "TableGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 2,
+        "llm_error_count": 0,
+        "llm_tokens_used": 3034
+      }
+    },
+    {
+      "page_id": 23,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "Line",
+          88
+        ],
+        [
+          "Span",
+          88
+        ],
+        [
+          "Caption",
+          2
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "TableGroup",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 1,
+        "llm_error_count": 0,
+        "llm_tokens_used": 1715
+      }
+    },
+    {
+      "page_id": 24,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "Span",
+          100
+        ],
+        [
+          "Line",
+          60
+        ],
+        [
+          "Text",
+          4
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "TextInlineMath",
+          2
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 2,
+        "llm_error_count": 0,
+        "llm_tokens_used": 2684
+      }
+    },
+    {
+      "page_id": 25,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "Line",
+          42
+        ],
+        [
+          "Span",
+          42
+        ],
+        [
+          "Text",
+          7
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "Equation",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0
+      }
+    },
+    {
+      "page_id": 26,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "Line",
+          17
+        ],
+        [
+          "Span",
+          17
+        ],
+        [
+          "Text",
+          3
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0
+      }
+    }
+  ],
+  "debug_data_path": "debug_data/2111.03794v4"
+}
